@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Справочник по рестлингу: рестлеры, титулы, группировки, события и официальные видео.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Wrestling Hub — справочник о рестлинге</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="site-header__brand" href="index.html">Wrestling Hub</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li><a href="wrestlers.html">Рестлеры</a></li>
+        <li><a href="championships.html">Чемпионы</a></li>
+        <li><a href="factions.html">Группировки</a></li>
+        <li><a href="events.html">События</a></li>
+        <li><a href="videos.html">Видео</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Тема оформления" aria-pressed="false">Светлая тема</button>
+  </header>
+  <main id="main-content" class="home-page">
+    <h1>Wrestling Hub</h1>
+    <p>Информационный справочник о профессиональном рестлинге.</p>
+    <section class="home-page__section" aria-labelledby="favorites-heading">
+      <h2 id="favorites-heading">Избранные рестлеры</h2>
+      <ul id="favorite-wrestlers" class="wrestler-list">
+        <li>Избранное появится здесь.</li>
+      </ul>
+    </section>
+    <section class="home-page__section" aria-labelledby="recent-wrestlers-heading">
+      <h2 id="recent-wrestlers-heading">Недавно просмотренные</h2>
+      <ul id="recent-wrestlers" class="wrestler-list">
+        <li>Просмотренные профили появятся здесь.</li>
+      </ul>
+    </section>
+    <section class="home-page__section" aria-labelledby="upcoming-events-heading">
+      <h2 id="upcoming-events-heading">Ближайшие события</h2>
+      <ul id="upcoming-events" class="event-list">
+        <li>События появятся здесь.</li>
+      </ul>
+      <a href="events.html">Все события</a>
+    </section>
+    <section class="home-page__section" aria-labelledby="current-champions-heading">
+      <h2 id="current-champions-heading">Текущие чемпионы</h2>
+      <ul id="current-champions" class="championship-list">
+        <li>Информация о чемпионах появится здесь.</li>
+      </ul>
+      <a href="championships.html">Все титулы</a>
+    </section>
+    <section class="home-page__section" aria-labelledby="recent-videos-heading">
+      <h2 id="recent-videos-heading">Официальные видео</h2>
+      <ul id="recent-videos" class="video-list">
+        <li>Подборка видео появится здесь.</li>
+      </ul>
+      <a href="videos.html">Все видео</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Wrestling Hub — неофициальный фан-сайт, не связанный с WWE.</p>
+    <p class="site-footer__note">Составы, титулы и результаты публикуются только после проверки официальных источников.</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

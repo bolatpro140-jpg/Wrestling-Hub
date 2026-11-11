@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Профиль рестлера: промоушен, бренд, группировки и титульная история.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Профиль рестлера — Wrestling Hub</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="site-header__brand" href="index.html">Wrestling Hub</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li><a href="wrestlers.html" aria-current="page">Рестлеры</a></li>
+        <li><a href="championships.html">Чемпионы</a></li>
+        <li><a href="factions.html">Группировки</a></li>
+        <li><a href="events.html">События</a></li>
+        <li><a href="videos.html">Видео</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Тема оформления" aria-pressed="false">Светлая тема</button>
+  </header>
+  <main id="main-content" class="wrestler-page">
+    <p><a href="wrestlers.html">Назад к каталогу</a></p>
+    <article id="wrestler-profile" aria-live="polite">
+      <h1>Профиль рестлера</h1>
+      <p>Данные профиля появятся здесь.</p>
+    </article>
+    <section class="wrestler-page__section" aria-labelledby="wrestler-championships-heading">
+      <h2 id="wrestler-championships-heading">Титульная история</h2>
+      <ul id="wrestler-championships" class="championship-list">
+        <li>История титулов появится здесь.</li>
+      </ul>
+    </section>
+    <section class="wrestler-page__section" aria-labelledby="wrestler-factions-heading">
+      <h2 id="wrestler-factions-heading">Группировки</h2>
+      <ul id="wrestler-factions" class="faction-list">
+        <li>Информация о группировках появится здесь.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Wrestling Hub — неофициальный фан-сайт, не связанный с WWE.</p>
+    <p class="site-footer__note">Составы, титулы и результаты публикуются только после проверки официальных источников.</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

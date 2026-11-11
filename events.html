@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Расписание предстоящих шоу и результаты прошедших событий.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>События — Wrestling Hub</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="site-header__brand" href="index.html">Wrestling Hub</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li><a href="wrestlers.html">Рестлеры</a></li>
+        <li><a href="championships.html">Чемпионы</a></li>
+        <li><a href="factions.html">Группировки</a></li>
+        <li><a href="events.html" aria-current="page">События</a></li>
+        <li><a href="videos.html">Видео</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Тема оформления" aria-pressed="false">Светлая тема</button>
+  </header>
+  <main id="main-content" class="events-page">
+    <h1>События</h1>
+    <section class="events-page__section" aria-labelledby="upcoming-heading">
+      <h2 id="upcoming-heading">Предстоящие</h2>
+      <ul id="upcoming-event-list" class="event-list">
+        <li>Предстоящие события появятся здесь.</li>
+      </ul>
+    </section>
+    <section class="events-page__section" aria-labelledby="past-heading">
+      <h2 id="past-heading">Прошедшие</h2>
+      <ul id="past-event-list" class="event-list">
+        <li>Прошедшие события появятся здесь.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Wrestling Hub — неофициальный фан-сайт, не связанный с WWE.</p>
+    <p class="site-footer__note">Составы, титулы и результаты публикуются только после проверки официальных источников.</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

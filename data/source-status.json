@@ -1,0 +1,11 @@
+{
+  "status": "unavailable",
+  "checkedAt": "2026-11-11",
+  "message": "Проверить актуальные данные не удалось: официальный сайт WWE не ответил из среды проверки. Неподтверждённые записи скрыты.",
+  "sources": [
+    { "label": "WWE: ростер", "url": "https://www.wwe.com/superstars" },
+    { "label": "WWE: чемпионы", "url": "https://www.wwe.com/champions" },
+    { "label": "WWE: события", "url": "https://www.wwe.com/events" },
+    { "label": "WWE: результаты", "url": "https://www.wwe.com/results" }
+  ]
+}

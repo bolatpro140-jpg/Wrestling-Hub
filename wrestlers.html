@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог рестлеров разных промоушенов с поиском и фильтрами.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Рестлеры — Wrestling Hub</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="site-header">
+    <a class="site-header__brand" href="index.html">Wrestling Hub</a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li><a href="wrestlers.html" aria-current="page">Рестлеры</a></li>
+        <li><a href="championships.html">Чемпионы</a></li>
+        <li><a href="factions.html">Группировки</a></li>
+        <li><a href="events.html">События</a></li>
+        <li><a href="videos.html">Видео</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Тема оформления" aria-pressed="false">Светлая тема</button>
+  </header>
+  <main id="main-content" class="wrestlers-page">
+    <h1>Рестлеры</h1>
+    <form class="wrestlers-page__filters" role="search">
+      <div class="form-field">
+        <label for="wrestler-search">Поиск по имени</label>
+        <input id="wrestler-search" name="q" type="search">
+      </div>
+      <div class="form-field">
+        <label for="promotion-filter">Промоушен</label>
+        <select id="promotion-filter" name="promotion">
+          <option value="">Все промоушены</option>
+          <option value="wwe">WWE</option>
+          <option value="aew">AEW</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="brand-filter">Бренд</label>
+        <select id="brand-filter" name="brand">
+          <option value="">Все бренды</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="status-filter">Статус</label>
+        <select id="status-filter" name="status">
+          <option value="">Любой статус</option>
+          <option value="active">Активен</option>
+          <option value="part-time">Выступает время от времени</option>
+          <option value="inactive">Не выступает</option>
+          <option value="retired">Завершил карьеру</option>
+        </select>
+      </div>
+      <button type="reset">Сбросить фильтры</button>
+    </form>
+    <p id="wrestler-results-count" aria-live="polite"></p>
+    <ul id="wrestler-list" class="wrestler-list" aria-label="Результаты поиска">
+      <li>Каталог рестлеров появится здесь.</li>
+    </ul>
+  </main>
+  <footer class="site-footer">
+    <p>Wrestling Hub — неофициальный фан-сайт, не связанный с WWE.</p>
+    <p class="site-footer__note">Составы, титулы и результаты публикуются только после проверки официальных источников.</p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
